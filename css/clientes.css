@@ -1,0 +1,79 @@
+
+.container-cliente{
+    display: grid;
+    gap: 2rem;
+    padding: 50px 60px;
+    background: #f7f7f7;
+    justify-items: start;
+    margin-top: 3rem;
+
+}
+.grid-clientes{
+    justify-self: center;
+    display: flex;
+    gap: 2rem;
+    
+    
+}
+.clientes{
+    display: grid;
+    gap: 2rem;
+    background: #ffff;
+    box-shadow: -4px 8px 20px #d9d9d9;
+    border-radius: .6rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    
+
+}
+
+.divisao{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+@media (max-width :1000px) {
+    
+    .clientes{
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .divisao{
+        gap: 0.5rem;
+    }
+    .clientes h4{
+        font-size: .8rem;
+        
+    }
+    span{
+        font-size: .7rem;
+    }
+    
+}
+@media (max-width:800px){
+    
+    .container-cliente{
+        display: grid;
+        gap: 1rem;
+        padding: 50px 10px;
+        
+    }
+    .grid-clientes{
+        flex-direction: column;
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+
+    }
+    .clientes{
+        margin-top: 0;
+    }
+    .titulo-depor{
+        font-size: 1.35rem;
+    }
+    .descricao-depor{
+        font-size: 1rem;
+    }
+}

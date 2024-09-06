@@ -1,0 +1,129 @@
+.fixed{
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    background: var(--cor-do-icon);
+    padding: 1rem 4rem;
+    z-index: 2;
+}
+.fixed .menu a{
+    background: var(--cor-do-fundopreto);
+}
+.contacto{
+  max-width: 100%;
+    gap: 1.25rem;
+    padding: 2rem 4rem ;
+    background: #000000;
+    color: #ffffff;
+    }
+        .grid-contacto{  display: grid;
+    grid-template-columns: minmax(400px, 500px) 1fr;
+            margin-top: 150px;
+            gap: 1rem;
+        }
+.contacto input{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    width: 450px;
+    height: 10px;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1.05rem;
+    border: 3px solid #fa9316;
+}
+.contacto #mensagem{
+display: block;
+height: 100px;
+width:350px;
+padding: 2rem 1rem;
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+.contacto label{
+    margin-top: 1rem;
+}
+select{
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 1.05rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+option{
+    padding: 2rem;
+}
+.informacoes{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 1rem;
+}
+.contacto button{
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: 0px;
+    background: #fa9316;
+    font-size: 1.25rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+h5{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.informacoes div  div{
+    display: flex;
+    gap: 1rem;
+
+}
+.informacoes img{
+    border: 3px solid #fa9316;
+    padding: 1rem;
+}
+@media (max-width:980px){
+    .grid-contacto{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 200px;
+    }
+}
+@media (max-width:980px){
+    .grid-contacto{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 200px;
+      
+    }
+    
+}
+@media (max-width:800px){
+    
+    .contacto #mensagem{
+        height: 100px;
+        width: 200px;
+    }
+}
+@media (max-width:700px){
+    .contacto{
+        padding: 20px;
+    }
+    .grid-contacto{
+        
+        margin-top: 300px;
+        
+    }
+    .contacto  input{
+        width: 300px;
+    }
+}
+@media (max-width:370px){
+    .grid-contacto{
+    
+        margin-top: 400px;
+    }
+    .contacto  input{
+        width: 200px;
+    }
+}
+

@@ -1,0 +1,32 @@
+.introducao{
+    padding: 0rem 3rem;
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+
+}
+.introducao h1{
+    text-align: center;
+    line-height: 1.25;
+    font-weight: bold;
+
+}
+.introducao a{
+    background: var(--cor-do-botao);
+    border-radius: 4px;
+    padding: 1rem  2.5rem;
+    
+}
+.introducao p{
+    text-align: center;
+}
+@media (max-width:800px){
+    .introducao h1{
+        font-size: 2.5rem;
+    }
+    .introducao p{
+        font-size: 1.1rem;
+        width: 25rem;
+    }
+}

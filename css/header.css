@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .menu a{
+    background: var(--cor-do-botao);
+    border-radius: 4px;
+}
+@media (max-width:960px){
+    .header{
+        justify-content: center;
+        gap: 1rem;
+    }
+}

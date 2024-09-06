@@ -1,0 +1,120 @@
+.grid-section {
+    display: grid;
+    justify-items: start;
+    gap: 2rem;
+    padding: 20px 60px;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.imagem-container {
+    position: relative;
+}
+
+.text-overlay {
+    line-height: 1.125;
+    padding: 25px;
+    top: -5px;
+    position: absolute;
+    display: grid;
+    gap: 2rem;
+
+}
+
+.imagem-container img {
+    width: 350px;
+
+    /* opacity: 0.8; */
+}
+
+.text-overlay h3 {
+    color: #f7f7f7 ;
+}
+
+.servicos .imagem-container p {
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.servicos .imagem-container a {
+    border-radius: 4px;
+    justify-self: start;
+    border: 4px solid var(--cor-do-botao);
+    font-weight: bold;
+
+}
+
+.botoes {
+    display: flex;
+    gap: .3rem;
+    justify-self: center;
+}
+
+.botoes div {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #f7f7f7;
+}
+
+.grid-servicos {
+    padding: 20px 60px;
+    display: grid;
+    justify-items: start;
+    gap: 2rem;
+
+}
+
+.faqs {
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+dt {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 150%;
+    color: var(--cor-do-botao);
+    
+
+}
+
+
+dd {
+    font-size: 1rem;
+    max-width: 90ch;
+    font-weight: medium;
+    /* width: 100ch; Esse estava a fazer o  scrool */
+    color: #606F81;
+    /* padding: 1rem 0rem; */
+}
+
+@media (max-width:800px) {
+    .grid-section {
+        padding: 10px;
+    }
+
+    .servicos .imagem-container h3 {
+        font-size: 1.80rem;
+    }
+
+    .servicos .imagem-container a {
+        padding: 1rem;
+
+    }
+
+    .grid-servicos {
+        padding: 10px;
+    }
+
+    dt {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,71 @@
+.container-rodape{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #101923;
+    padding: 2rem 4.357rem;
+    gap: 3rem 2rem;
+}
+.container-rodape p{
+    color: #d9d9d9;
+    font-size: 1.125rem;
+}
+.container-social{
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+    
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    align-items: center;
+    
+}
+.link{
+    display: grid;
+    
+}
+.links a{
+    padding: 0px;
+    color: #d9d9d9;
+    
+}
+.menu-footer{
+    display: grid;
+    gap: .5rem;
+    margin-top: 1rem;
+
+}
+
+
+.direitos{
+    grid-column: 1/-1;
+    justify-self: center;
+    color: #ffff;
+    font-size: 1.25rem;
+
+}
+@media (max-width:800px){
+    .direitos{
+        font-size: 1rem;
+    }
+    .container-rodape{
+        padding: 40px 20px;
+        max-width: 100%;
+    }
+}
+@media (max-width:600px){
+    .direitos{
+        font-size: .8rem !important;
+    }
+    
+}
+@media (max-width:400px){
+    .direitos{
+        font-size: .6rem !important;
+    }
+    
+}
+
+ 
